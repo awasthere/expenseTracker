@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <div class="heading">
+                <h1>Expense tracker</h1>
+                <p>Pocket Amount: Rs.0</p>
+            </div>
+            <div class="input-container">
+                <input class="frm" id="inp0" placeholder="Pocket Amount">
+                <input class="frm" id="inp1" placeholder="Expense Descripition">
+                <form>
+                    <select class="frm" id="category" required>
+                        <option value="Utensils">Utensils</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Food">Food</option>
+                        <option value="Rent">Rent</option>
+                        <option value="others">Others</option>
+                    </select>
+                </form>
+                <input class="frm" id="inp2" placeholder="Amount">
+                <button id="btn1">Add amount in pocket</button>
+                <button id="btn2">Add Expense</button>
+                
+            </div>
+            <div>
+                <div class="table-container">
+                    <header>
+                        <h1>Expense Summary</h1>
+                    </header>
+                    <table id="summarytable">
+                        <tr>
+                            <th>Descripition</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
